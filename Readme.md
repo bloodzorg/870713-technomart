@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Pavel Vlasov](https://up.htmlacademy.ru/htmlcss/23/user/870713).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
