@@ -1,0 +1,277 @@
+
+body {
+  font-size: 17px;
+  font-family: "Cuprum", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: black;
+}
+
+header {
+background-color: #f1f5f7;
+}
+
+.logo {
+  background-color: red;
+  background-image: url(img/logoimg.jpg);
+  text-decoration: none;
+  background-position: top center;
+  background-repeat: no-repeat;
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: left;
+  position: absolute;
+}
+
+.main-header-top {
+  background-color: #293449;
+}
+
+a.main-header-top:not(.logo) {
+  text-decoration: none;
+  color: #ffffff;
+
+}
+
+.search {
+  background-color: #293449;
+  font-size: 17px;
+  font-family: "Cuprum";
+  color: #ffffff;
+  text-align: left;
+  line-height: 18px;
+  height: 42px;
+  width: 270px;
+}
+
+.search:active {
+  background-color:#ffffff;
+}
+
+.search:hover {
+  background-color: #212a3a;
+}
+
+.bookmarks {
+  font-family: "Cuprum";
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+  background-color: #293449;
+  text-align: left;
+  width: 150px;
+  height: 42px;
+}
+
+.bookmarks:active {
+  color: #a2a5a9;
+  background-color: #212a3a;
+}
+
+.bookmarks:hover {
+  background-color: #212a3a;
+}
+
+
+.basket {
+  font-family: "Cuprum";
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: none;
+  text-align: left;
+  width: 150px;
+  height: 42px;
+}
+
+.basket:active {
+  color: #a2a5a9;
+  background-color: #212a3a;
+}
+
+.basket:hover {
+  background-color: #212a3a;
+}
+
+.order-header {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "Cuprum";
+  background-color: #63a63e;
+  text-decoration: none;
+  width: 150px;
+  height: 42px;
+}
+
+.order-header:active {
+  color: #a2a5a9;
+  background-color: #518534;
+}
+
+.order-header:hover {
+  background-color: #5fbb2d;
+}
+
+.info {
+  font-size: 16px;
+  font-family: "Cuprum";
+  color: rgb(238, 54, 67);
+  font-style: italic;
+  line-height: 23px;
+  text-align: left;
+  width: 240px;
+  height: 67px;
+}
+
+.phone {
+  font-size: 21px;
+  font-family: "Cuprum";
+  color: rgb(233, 41, 42);
+  line-height: 21px;
+  text-align: left;
+  border: 4px solid #ffffff;
+  padding: 10px;
+  width: 163px;
+  height: 23px;
+}
+
+.street {
+  font-size: 14px;
+  font-family: "Cuprum";
+  color: rgb(50, 66, 92);
+  line-height: 24px;
+
+}
+
+.login {
+  font-size: 21px;
+  font-family: "Cuprum";
+  color: #32425c;
+  line-height: 21px;
+  text-align: left;
+  background-color: #ffffff;
+  text-decoration: none;
+  height: 45px;
+  width: 121px;
+}
+
+.login:hover {
+  color: #ee3643;
+}
+
+.login:active {
+ color: #b2b2b2;
+}
+
+.registration {
+  font-size: 21px;
+  font-family: "Cuprum";
+  color: #32425c;
+  line-height: 21px;
+  text-align: left;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.registration:hover {
+  color: #ee3643;
+}
+
+.registration:active {
+ color: #b2b2b2;
+}
+
+.user-name {
+  font-family: "Cuprum";
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: auto;
+  text-decoration: none;
+  width: 299px;
+  height: 45px;
+}
+
+.user-name:hover {
+  color: 000000;
+}
+
+.user-name:active {
+ color: #b2b2b2;
+}
+
+.my-orders {
+  font-size: 16px;
+  font-family: "Cuprum";
+  text-align: auto;
+  text-decoration: underline;
+  color: #49586f;
+  line-height: 18px;
+}
+
+.account {
+  font-size: 16px;
+  font-family: "Cuprum";
+  text-align: auto;
+  text-decoration: underline;
+  color: #49586f;
+  line-height: 18px;
+}
+
+.my-orders:hover {
+  color: #ee3643;
+}
+
+.my-orders:active {
+  color: #b2b2b2;
+}
+
+.account:hover {
+  color: #ee3643;
+}
+
+.account:active {
+  color: #b2b2b2;
+}
+
+.menu {
+  font-family: "Cuprum";
+  font-size: 17px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.menu a {
+  font-family: "Cuprum";
+  font-size: 17px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu a:hover {
+ background-color: #293449;
+}
+
+.menu a:active {
+  background-color: #293449;
+  color: #777d88;
+}
+
+.modal-map {
+  display: none;
+}
+
+.modal-write-us {
+  display: none;
+}
+
+.modal-in-cart {
+  display: none;
+}
