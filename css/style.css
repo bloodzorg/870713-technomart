@@ -41,7 +41,6 @@ a.main-header-top:not(.logo) {
 .search {
   background-color: #293449;
   font-size: 17px;
-  font-family: "Cuprum","Arial",sans-serif;;
   color: #ffffff;
   text-align: left;
   line-height: 18px;
@@ -58,7 +57,6 @@ a.main-header-top:not(.logo) {
 }
 
 .bookmarks {
-  font-family: "Cuprum","Arial",sans-serif;;
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
@@ -80,7 +78,6 @@ a.main-header-top:not(.logo) {
 
 
 .basket {
-  font-family: "Cuprum","Arial",sans-serif;;
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
@@ -102,7 +99,6 @@ a.main-header-top:not(.logo) {
 .order-header {
   font-size: 17px;
   line-height: 18px;
-  font-family: "Cuprum","Arial",sans-serif;;
   background-color: #63a63e;
   text-decoration: none;
   width: 150px;
@@ -124,7 +120,6 @@ a.main-header-top:not(.logo) {
 
 .info {
   font-size: 16px;
-  font-family: "Cuprum","Arial",sans-serif;;
   color: rgb(238, 54, 67);
   font-style: italic;
   line-height: 23px;
@@ -135,7 +130,6 @@ a.main-header-top:not(.logo) {
 
 .phone {
   font-size: 21px;
-  font-family: "Cuprum","Arial",sans-serif;;
   color: rgb(233, 41, 42);
   line-height: 21px;
   text-align: left;
@@ -147,7 +141,6 @@ a.main-header-top:not(.logo) {
 
 .street {
   font-size: 14px;
-  font-family: "Cuprum","Arial",sans-serif;;
   color: rgb(50, 66, 92);
   line-height: 24px;
 
@@ -155,7 +148,6 @@ a.main-header-top:not(.logo) {
 
 .login {
   font-size: 21px;
-  font-family: "Cuprum","Arial",sans-serif;;
   color: #32425c;
   line-height: 21px;
   text-align: left;
@@ -175,7 +167,6 @@ a.main-header-top:not(.logo) {
 
 .registration {
   font-size: 21px;
-  font-family: "Cuprum","Arial",sans-serif;;
   color: #32425c;
   line-height: 21px;
   text-align: left;
@@ -192,7 +183,6 @@ a.main-header-top:not(.logo) {
 }
 
 .user-name {
-  font-family: "Cuprum","Arial",sans-serif;;
   background-color: #ffffff;
   color: #000000;
   font-size: 21px;
@@ -213,7 +203,6 @@ a.main-header-top:not(.logo) {
 
 .my-orders {
   font-size: 16px;
-  font-family: "Cuprum","Arial",sans-serif;;
   text-align: auto;
   text-decoration: underline;
   color: #49586f;
@@ -222,7 +211,6 @@ a.main-header-top:not(.logo) {
 
 .account {
   font-size: 16px;
-  font-family: "Cuprum","Arial",sans-serif;;
   text-align: auto;
   text-decoration: underline;
   color: #49586f;
@@ -246,7 +234,6 @@ a.main-header-top:not(.logo) {
 }
 
 .menu {
-  font-family: "Cuprum","Arial",sans-serif;;
   font-size: 17px;
   color: #ffffff;
   background-color: #32425c;
@@ -258,7 +245,6 @@ a.main-header-top:not(.logo) {
 }
 
 .menu a {
-  font-family: "Cuprum","Arial",sans-serif;;
   font-size: 17px;
   text-decoration: none;
   color: #ffffff;
@@ -287,7 +273,6 @@ a.main-header-top:not(.logo) {
 
 .about-us h2 {
   font-size: 30px;
-  font-family: "Cuprum","Arial",sans-serif;
   color: #111111;
 }
 
@@ -298,7 +283,6 @@ a.main-header-top:not(.logo) {
 }
 
 .transpotr-company a {
-  font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   line-height: 40px;
   color: #000000;
@@ -333,7 +317,6 @@ a.main-header-top:not(.logo) {
 footer {
   color: #ffffff;
   background-color: #32425c;
-  font-family: font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
@@ -369,7 +352,6 @@ footer {
 
 .footer-low {
   background-color: #293449;
-  font-family: font-family: "Cuprum","Arial",sans-serif;
   font-size: 16px;
   line-height: 28px;
 }
@@ -433,7 +415,6 @@ footer {
   font-style: normal;
   font-size: 30px;
   line-height: 30px;
-  font-family: "Cuprum","Arial",sans-serif;
   text-transform: uppercase;
   color: #32425c;
 }
@@ -521,7 +502,6 @@ footer {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Cuprum','Arial',sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   background: #63a63e;
@@ -544,7 +524,6 @@ footer {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-family: 'Cuprum','Arial',sans-serif;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 3px;
