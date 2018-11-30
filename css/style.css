@@ -10,26 +10,47 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 header {
   background-color: #f1f5f7;
 }
 
+* {
+  outline: #pu
+}
+
 .logo {
   background-color: red;
-  background-image: url(..img/logoimg.jpg);
+
   text-decoration: none;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   font-size: 24px;
   color: rgb(255, 255, 255);
   line-height: 24px;
   text-transform: uppercase;
-  text-align: left;
-  position: absolute;
+  text-align: center;
+  width: 220px;
+  display: inline-block;
+  padding: 12px 0 10px 0px;
 }
+
 
 .main-header-top {
   background-color: #293449;
+  min-height: 42px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding: 0;
+
 }
 
 a.main-header-top:not(.logo) {
@@ -43,8 +64,18 @@ a.main-header-top:not(.logo) {
   color: #ffffff;
   text-align: left;
   line-height: 18px;
-  height: 42px;
   width: 270px;
+}
+
+input[type=search] {
+  width: 250px;
+  padding: 12px 0 10px 49px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .search:active {
@@ -61,9 +92,9 @@ a.main-header-top:not(.logo) {
   line-height: 18px;
   text-decoration: none;
   background-color: #293449;
-  text-align: left;
-  width: 150px;
-  height: 42px;
+  text-align: center;
+  width: 105px;
+  padding: 13px 20px 13px 45px;
 }
 
 .bookmarks:active {
@@ -81,9 +112,9 @@ a.main-header-top:not(.logo) {
   font-size: 17px;
   line-height: 18px;
   text-decoration: none;
-  text-align: left;
-  width: 150px;
-  height: 42px;
+  text-align: center;
+  width: 105px;
+  padding: 13px 0 13px 45px;
 }
 
 .basket:active {
@@ -101,7 +132,7 @@ a.main-header-top:not(.logo) {
   background-color: #63a63e;
   text-decoration: none;
   width: 150px;
-  height: 42px;
+  padding: 14px 0 12px 45px;
 }
 
 .order-header:active {
@@ -131,11 +162,14 @@ a.main-header-top:not(.logo) {
   font-size: 21px;
   color: rgb(233, 41, 42);
   line-height: 21px;
-  text-align: left;
+  text-align: center;
   border: 4px solid #ffffff;
   padding: 10px;
-  width: 163px;
-  height: 23px;
+  width: 245px;
+  margin-top: 25px;
+  margin-bottom: -15px;
+
+
 }
 
 .street {
@@ -153,7 +187,7 @@ a.main-header-top:not(.logo) {
   background-color: #ffffff;
   text-decoration: none;
   height: 45px;
-  width: 121px;
+  width: 300px;
 }
 
 .login:hover {
@@ -186,10 +220,12 @@ a.main-header-top:not(.logo) {
   color: #000000;
   font-size: 21px;
   line-height: 21px;
-  text-align: auto;
+  text-align: center;
   text-decoration: none;
-  width: 299px;
-  height: 45px;
+  width: 300px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .user-name:hover {
@@ -539,4 +575,54 @@ footer {
 .in-bookmarks:active {
   border: 3px solid #c1c6ce;
   color: #c1c6ce;
+}
+
+
+body {
+  min-width: 960px;
+
+
+}
+
+.main-header-top .container  {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+.main-header-low {
+  display: flex;
+}
+
+.main-header-low .container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contacts {
+  width: 271px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-info {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -15px;
+}
+
+.user-info-interface {
+  display: flex;
+  align-items: center;
+
+
 }
