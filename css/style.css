@@ -11,12 +11,12 @@ body {
 }
 
 header {
-background-color: #f1f5f7;
+  background-color: #f1f5f7;
 }
 
 .logo {
   background-color: red;
-  background-image: url(img/logoimg.jpg);
+  background-image: url(..img/logoimg.jpg);
   text-decoration: none;
   background-position: top center;
   background-repeat: no-repeat;
@@ -35,7 +35,6 @@ background-color: #f1f5f7;
 a.main-header-top:not(.logo) {
   text-decoration: none;
   color: #ffffff;
-
 }
 
 .search {
@@ -489,7 +488,7 @@ footer {
   color: #999999;
 }
 
-.new-price.button {
+.new-price {
   width: 80px;
   padding: 10px 15px 10px 30px;
   text-decoration: none;
@@ -498,7 +497,7 @@ footer {
   border-radius: 3px 3px 3px 3px;
 }
 
-.buy-button.button {
+.buy-button {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -511,16 +510,16 @@ footer {
 
 }
 
-.buy-button.button:hover {
+.buy-button:hover {
   background-color: #5fbb2d;
 }
 
-.buy-button.button:active {
+.buy-button:active {
   background-color: #518534;
   color: #e8efe4;
 }
 
-.in-bookmarks.button {
+.in-bookmarks {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
@@ -533,11 +532,11 @@ footer {
   color: #32425c;
 }
 
-.in-bookmarks.button:hover {
+.in-bookmarks:hover {
   border: 3px solid #32425c;
 }
 
-.in-bookmarks.button:active {
+.in-bookmarks:active {
   border: 3px solid #c1c6ce;
   color: #c1c6ce;
 }
