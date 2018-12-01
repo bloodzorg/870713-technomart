@@ -179,15 +179,29 @@ input[type=search] {
 
 }
 
-.login {
+.login-box {
   font-size: 21px;
   color: #32425c;
   line-height: 21px;
   text-align: left;
   background-color: #ffffff;
   text-decoration: none;
-  height: 45px;
-  width: 300px;
+  width: 282px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10px
+}
+
+.login {
+  width: 121px;
+  padding: 14px 27px 15px 48px;
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  margin-right: 10px;
 }
 
 .login:hover {
@@ -205,6 +219,9 @@ input[type=search] {
   text-align: left;
   background-color: #ffffff;
   text-decoration: none;
+  display: flex;
+  width: 150px;
+  padding: 14px 25px 11px 25px;
 }
 
 .registration:hover {
@@ -277,12 +294,16 @@ input[type=search] {
 .menu-list {
   list-style: none;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a {
   font-size: 17px;
   text-decoration: none;
   color: #ffffff;
+  padding: 20px 34px;
+  display: flex;
 }
 
 .menu a:hover {
@@ -309,12 +330,14 @@ input[type=search] {
 .about-us h2 {
   font-size: 30px;
   color: #111111;
+  margin-bottom: 40px;
 }
 
 .about-us p {
   font-size: 13px;
   font-family: "PT Sans","Arial",sans-serif;
   color: #222222;
+  margin-bottom: 40px;
 }
 
 .transpotr-company a {
@@ -322,9 +345,12 @@ input[type=search] {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
+
+
 }
 
-.about-us-info .button {
+.about-us-info
+.button {
   padding: 15px 45px 15px;
   font-size: 14px;
   line-height: 18px;
@@ -334,6 +360,10 @@ input[type=search] {
   background-color: #ef4652;
   border-radius: 4px;
   text-transform: uppercase;
+  margin-top: 30px;
+  width: 140px;
+  display: flex;
+  text-align: center;
 }
 
 .about-us-contacts
@@ -347,6 +377,9 @@ input[type=search] {
   background-color: #ef4652;
   border-radius: 4px;
   text-transform: uppercase;
+  width: auto;
+  display: block;
+
 }
 
 footer {
@@ -579,7 +612,7 @@ footer {
 
 
 body {
-  min-width: 960px;
+  min-width: 940px;
 
 
 }
@@ -596,6 +629,7 @@ body {
 
 .main-header-low {
   display: flex;
+  margin-bottom: 45px;
 }
 
 .main-header-low .container {
@@ -623,6 +657,59 @@ body {
 .user-info-interface {
   display: flex;
   align-items: center;
+}
+
+.menu-list {
+  width: 940px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 45px;
+
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content:  flex-start;
+  width: 940px;
+
+}
+
+.container-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 82px;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content:  center;
+}
+
+.about-us-info {
+  width: 540px;
+  margin-right: 100px;
+
+}
+
+.about-us-contacts {
+  width: 300px;
+  margin-top: px;
 
 
+}
+
+.about-us-container {
+  width: 940px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 40px;
+}
+
+.map-container {
+  margin-bottom: 60px;
 }
