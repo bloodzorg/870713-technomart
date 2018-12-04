@@ -133,6 +133,7 @@ input[type=search] {
   text-decoration: none;
   width: 150px;
   padding: 14px 0 12px 45px;
+  color: #ffffff;
 }
 
 .order-header:active {
@@ -289,6 +290,7 @@ input[type=search] {
   font-size: 17px;
   color: #ffffff;
   background-color: #32425c;
+  width: 940px;
 }
 
 .menu-list {
@@ -302,8 +304,9 @@ input[type=search] {
   font-size: 17px;
   text-decoration: none;
   color: #ffffff;
-  padding: 20px 34px;
+  padding: 20px 33px;
   display: flex;
+  margin-left: 1.5px;
 }
 
 .menu a:hover {
@@ -600,7 +603,7 @@ footer {
   text-transform: uppercase;
   background: #63a63e;
   border-radius: 3px;
-  padding: 10px 15px 10px 30px;
+  padding: 10px 30px 10px 30px;
   color: #ffffff;
   margin: 0 auto;
   display: block;
@@ -627,7 +630,7 @@ footer {
   border-radius: 3px;
   background-color: #ffffff;
   border: 3px solid #63a63e;
-  padding: 7px 12px 7px 27px;
+  padding: 7px 27px 7px 27px;
   color: #32425c;
 }
 
