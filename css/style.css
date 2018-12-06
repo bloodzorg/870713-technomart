@@ -89,6 +89,7 @@ input[type=search] {
 }
 
 input[type=search]:focus {
+  position: relative;
   background-color: #ffffff;
   color: #000000;
 
@@ -272,6 +273,20 @@ input[type=search]:hover {
   background-color: #ffffff;
   margin-right: 10px;
   text-align: center;
+  position: relative;
+}
+
+.login::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icon-login.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
 }
 
 .login:hover {
