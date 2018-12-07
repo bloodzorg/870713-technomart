@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/outline.css">
+    <link rel="stylesheet" href="css/outline.c1ss">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,8 +17,8 @@
             <a class="logo" href="index.html">Техномарт</a>
           </div>
           <form action="/echo" method="post">
-              <label class="search-lable visually-hidden" for="search">Окно поиска</label>
-              <input type="search" id="search" placeholder="Поиск:">
+            <label class="search-lable visually-hidden" for="search">Окно поиска</label>
+            <input type="search" id="search" placeholder="Поиск:">
           </form>
           <a class="bookmarks" href="#">Закладки</a>
           <a class="basket" href="#">Корзина</a>
@@ -38,6 +38,7 @@
             <a class="user-name" href="#">Равшан Джамшутович</a>
             <div class="user-info-interface">
               <a class="my-orders" href="#">Мои заказы</a>
+              <span class="dot"></span>
               <a class="account" href="#">Личный кабинет</a>
             </div>
           </div>
@@ -59,10 +60,12 @@
     </header>
     <main>
       <div class="page-navigation">
-        <a href="index.html">домой</a>
-        <a href="catalog.html">Каталог</a>
-        <a href="#">Инструмент</a>
-        <a href="#">Перфораторы</a>
+        <ul class="page-navigation-container">
+          <li><a class="home-icon home" href="index.html"><span class="visually-hidden">домой</span></a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Перфораторы</a></li>
+        </ul>
       </div>
       <section class="product-title">
         <h2>Перфораторы</h2>

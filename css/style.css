@@ -243,6 +243,7 @@ input[type=search]:hover {
 }
 
 .phone::before {
+  content: "";
   position: absolute;
   background-image: url(../img/icon-phone.svg);
   top: 10px;
@@ -252,6 +253,7 @@ input[type=search]:hover {
   width: 19px;
   height: 19px;
   opacity: 1;
+
 }
 
 .street {
@@ -922,6 +924,9 @@ body {
 .social-box {
   width: 150px;
   display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
 
 }
 
@@ -1006,11 +1011,140 @@ main {
   margin-top: 60px;
 }
 
-.social-button-vk a::before {
+
+
+.social-button-vk::before {
+  content: "";
   position: absolute;
-  background-image: url(../img/vk-icon.png)
+  background-image: url(../img/icon-vk.svg);
   width: 26px;
   height: 15px;
-  top: 1px;
-  left: 10px;
+  top: 13px;
+  right: 9px;
+}
+
+.social-button-facebook::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-fb.svg);
+  width: 12px;
+  height: 22px;
+  left: 14px;
+  top: 10px;
+}
+
+.social-button-instagram::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-insta.svg);
+  width: 21px;
+  height: 21px;
+  top: 10px;
+  left: 11px;
+}
+
+.footer-social-button li {
+  display: inline-block;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-decoration: none;
+  background: #212a3a;
+  border-radius: 50px;
+  margin-left: 5px;
+}
+
+.footer-social-button li:last-child {
+  margin-right: 35px;
+}
+
+.footer-social-button li:hover,
+.footer-social-button li:active {
+  background: #ee3643;
+}
+
+.user-name {
+  position: relative;
+}
+
+.user-name::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-user.svg);
+  height: 18px;
+  width: 20px;
+  left: 15px;
+  top: 15px;
+}
+
+.user-name::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-logout.svg);
+  height: 17px;
+  width: 20px;
+  top: 16px;
+  right: 15px;
+}
+
+.user-name:hover::before {
+  background-image: url(../img/icon-user-hover.png);
+}
+
+.user-name:hover::after {
+  background-image: url(../img/icon-logout-hover.png);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  margin-left: 17px;
+  margin-bottom: 2px;
+  background: #32425c;
+  border-radius: 50px;
+  margin-right: 17px;
+}
+
+.page-navigation-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  list-style: none;
+}
+
+.page-navigation-container li {
+  position: relative;
+  margin-right: 35px;
+}
+
+.page-navigation-container li:not(:first-child)::after {
+  content: "";
+  background-image: url(../img/icon-right-small.svg);
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  top: 2px;
+  left: -20px;
+}
+
+.page-navigation-container li:nth-child(2) {
+  margin-left: 20px;
+}
+
+.home-icon {
+  position: relative;
+}
+
+.home-icon::after {
+  content: "";
+  background-image: url(../img/icon-home.svg);
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  left: 5px;
+  top: 2px;
 }
