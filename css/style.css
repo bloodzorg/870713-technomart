@@ -642,6 +642,7 @@ footer {
   font-family: "PT Sans","Arial",sans-serif;
   text-transform: uppercase;
   color: #000000;
+  margin-bottom: 20px;
 }
 
 .manufacturers-list,
@@ -655,7 +656,100 @@ footer {
   list-style: none;
   text-align: left;
   width: 220px;
+  padding: 0;
+  margin: 0;
 }
+
+.manufacturers-list {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.manufacturers li:first-child {
+  margin-top: 25px;
+}
+
+.manufacturers li:last-child {
+
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 30px;
+}
+
+.manufacturers-list li,
+.current-list li {
+  margin-left: 35px;
+  padding-bottom: 20px;
+}
+
+.current-list li:last-child {
+  margin-bottom: 75px;
+}
+
+input[type=checkbox] {
+	display:none;
+}
+
+input[type=radio] {
+	display:none;
+}
+
+.manufacturers-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.manufacturers-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  left: -35px;
+  top: 0;
+}
+
+.manufacturers-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 23px;
+  left: -35px;
+  top: 0;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.current-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.current-input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-off.svg);
+  left: -35px;
+  top: -3px;
+}
+
+.current-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -35px;
+  top: -3px;
+  background-image: url(../img/radio-on.svg);
+}
+
 
 .button-show {
   padding: 10px 35px 10px;
@@ -709,12 +803,14 @@ footer {
 }
 
 .new-price {
-  width: 80px;
-  padding: 10px 15px 10px 30px;
+  width: 141px;
+  padding: 10px 50px 10px 30px;
   text-decoration: none;
   color: #ffffff;
-  background: #ee3643;
-  border-radius: 3px 3px 3px 3px;
+  background-image: url(../img/buy-btn1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
   font-size: 17px;
   font-family: "PT Sans","Arial",sans-serif;
   line-height: 18px;
