@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/outline.1css">
+    <link rel="stylesheet" href="css/outlin1e.css">
   </head>
   <body>
     <header class="main-header">
@@ -72,31 +72,33 @@
             <h2>Контакты</h2>
             <p><strong>Вы можете забарать товар сами,<br>заехав в наш офис:</strong></p>
             <div class="map-container">
-              <img src="img/mini-map.jpg" width="300" height="158" alt="карта">
+              <a href="img/full-map.jpg"> <img src="img/mini-map.jpg" width="300" height="158" alt="карта"><a>
             </div>
             <a class="button" href="#">Заблудились? Напишите нам!</a>
           </div>
         </div>
-        <div class="modal-map">
+        <div class="modal-map show-map">
           <button class="model-map-close" type="button" aria-label="Закрыть карту"></button>
           <img src="img/full-map.jpg" width="940" height="448" alt="Карта в гугл мап">
         </div>
         <div class="modal-write-us">
           <button class="modal-write-us-close" type="button" aria-label="Закрыть окно написать нам"></button>
           <form method="post" enctype="multipart/form-data" action="#">
-            <label>
+            <label class="name-box">
               <span>Ваше имя:</span><br>
               <input type="text" placeholder="Имя Фамилия">
             </label>
-            <label>
+            <label class="mail-box">
               <span>Ваш e-mail:</span><br>
               <input type="text" placeholder="email@example.com">
             </label>
-            <label>
-              <span>Текст письма:</span><br>
+            <label class="textarea-box">
+              <span class="textarea-box-title">Текст письма:</span><br>
               <textarea name="text-mail" cols="100" rows="6" placeholder="В свободной форме"></textarea>
             </label>
-            <button class="button" type="submit">Отправить</button>
+            <div class="btn-write-us">
+              <button class="button" type="submit">Отправить</button>
+            </div>
           </form>
         </div>
       </section>

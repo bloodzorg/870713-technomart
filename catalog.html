@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/outline.c1ss">
+    <link rel="stylesheet" href="css/outline1.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -116,6 +116,7 @@
       </section>
       <div class="all-product-container">
         <section class="all-product" aria-label="список товаров">
+          <div>
           <article class="product drill1">
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
@@ -127,6 +128,7 @@
             <label class="visually-hidden" for="buy">Купить за</label>
             <a class="button new-price" href="#" id="buy">15500 P.</a>
           </article>
+        </div>
           <article class="product drill2">
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
@@ -222,11 +224,15 @@
         </div>
         <form class="modal-in-cart" method="post" enctype="multipart/form-data" action="#">
           <button class="modal-in-cart-close" type="button"></button>
-          <img src="img/in-cart.png" alt="Успешно!" width="66" height="66">
-          <span>Товар добавлен в корзину</span>
-          <div>
-            <button class="button checkout-buy" type="submit">Оформить заказ</button>
+          <div class="modal-in-cart-box">
+            <img src="img/in-cart.png" alt="Успешно!" width="66" height="66">
+            <span>Товар добавлен в корзину!</span>
+          </div>
+          <div class="btn-in-cart">
+            <div class="button-box-in-cart">
+              <button class="button checkout-buy" type="submit">Оформить заказ</button>
       		    <a class="button continue-buy" href="#">Продолжить Покупки</a>
+            </div>
           </div>
         </form>
     </main>
