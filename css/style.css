@@ -36,6 +36,7 @@ header {
   width: 220px;
   display: inline-block;
   padding: 12px 0 10px 0px;
+  z-index: 11;
 }
 
 .logo:hover{
@@ -79,9 +80,39 @@ input[type=search] {
   background-color: #293449;
   border: none;
   cursor: pointer;
-  background: url(../img/icon-search.svg) no-repeat;
-  background-position: 20px 11px;
-  opacity : 1;
+  /*background-image: url(../img/icon-search.svg) ;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  opacity : 0.3;*/
+}
+
+label[for="search"] {
+  position: relative;
+}
+
+label[for="search"]::before  {
+  content: "";
+  position: absolute;
+  background-image: url(../img/icon-search.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 15px;
+  opacity: 0.3;
+  width: 235px;
+  height: 17px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+
+label[for="search"]:hover::before {
+  opacity: 1;
+}
+
+label[for="search"]:focus::before {
+  background-image: url(../img/icon-search-red1.png);
+
 }
 
 input[type=search]:focus {
