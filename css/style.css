@@ -16,6 +16,7 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+  overflow: hidden;
 }
 
 header {
@@ -36,7 +37,7 @@ header {
   width: 220px;
   display: inline-block;
   padding: 12px 0 10px 0px;
-  z-index: 11;
+  z-index: 15;
 }
 
 .logo:hover{
@@ -1547,14 +1548,14 @@ main {
 }
 
 .product-new .flag {
-  position:absolute;
+  position: absolute;
   top: -1px;
   right: -1px;
   width: 60px;
   height: 60px;
   text-indent: -1000px;
   overflow: hidden;
-  z-index:20;
+  z-index:  20;
 }
 .product-new .flag-new {
   position: absolute;
@@ -1568,14 +1569,14 @@ main {
 
 .product-new .actions,
 .product .actions {
-  top:0;
-  left:0;
-  width:218px;
-  height:88px;
-  padding:40px 0;
-  background-color:rgba(255,255,255,0.9);
-  z-index: 100;
-  position:absolute;
+  top:  0;
+  left: 0;
+  width:  218px;
+  height: 88px;
+  padding:  40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 300;
+  position: absolute;
 }
 
 .product-new .actions,
