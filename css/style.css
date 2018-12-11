@@ -21,6 +21,7 @@ body {
 
 header {
   background-color: #f1f5f7;
+
 }
 
 .logo {
@@ -36,7 +37,7 @@ header {
   text-align: center;
   width: 220px;
   display: inline-block;
-  padding: 12px 0 10px 0px;
+  padding: 10.5px 0 12px 0px;
   z-index: 400;
 }
 
@@ -51,6 +52,7 @@ header {
   align-items: center;
   margin-bottom: 30px;
   padding: 0;
+  margin: 0;
 }
 
 a.main-header-top:not(.logo) {
@@ -71,7 +73,7 @@ a.main-header-top:not(.logo) {
 .search-form input[type=text] {
   position: relative;
   width: 100%;
-  padding: 12px 0 10px 49px;
+  padding: 16px 0 13px 49px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -80,6 +82,7 @@ a.main-header-top:not(.logo) {
   background-color: #293449;
   border: none;
   cursor: pointer;
+  outline:none;
   /*background-image: url(../img/icon-search.svg) ;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -105,6 +108,7 @@ a.main-header-top:not(.logo) {
   left: 20px;
   opacity: 0.3;
   background-color: transparent;
+  outline:none;
 }
 
 .search-button:hover {
@@ -172,7 +176,7 @@ label[for="search"]:focus::before {
   background-color: #293449;
   text-align: center;
   width: 105px;
-  padding: 13px 20px 13px 45px;
+  padding: 16px 20px 13px 45px;
 }
 
 .bookmarks::before {
@@ -211,7 +215,7 @@ label[for="search"]:focus::before {
   text-decoration: none;
   text-align: center;
   width: 105px;
-  padding: 13px 0 13px 45px;
+  padding: 16px 0 13px 45px;
   position: relative;
 }
 
@@ -250,7 +254,7 @@ label[for="search"]:focus::before {
   background-color: #63a63e;
   text-decoration: none;
   width: 150px;
-  padding: 14px 0 12px 45px;
+  padding: 16px 20px 13px 45px;
   color: #ffffff;
 }
 
@@ -331,7 +335,7 @@ label[for="search"]:focus::before {
 
 .login {
   width: 121px;
-  padding: 12px 25px 14px 46px;
+  padding: 15px 25px 14px 46px;
   font-size: 21px;
   line-height: 18px;
   text-decoration: none;
@@ -376,7 +380,7 @@ label[for="search"]:focus::before {
   text-decoration: none;
   display: flex;
   width: 150px;
-  padding: 12px 25px 14px 23px;
+  padding: 13px 25px 13px 23px;
 }
 
 .registration:hover {
