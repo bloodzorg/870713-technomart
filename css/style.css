@@ -37,7 +37,8 @@ header {
   width: 220px;
   display: inline-block;
   padding: 12px 0 10px 0px;
-  z-index: 15;
+  z-index: 400;
+
 }
 
 .logo:hover{
@@ -69,9 +70,9 @@ a.main-header-top:not(.logo) {
   width: 270px;
 }
 
-input[type=search] {
+.search-form input[type=text] {
   position: relative;
-  width: 250px;
+  width: 100%;
   padding: 12px 0 10px 49px;
   font-size: 17px;
   line-height: 18px;
@@ -87,7 +88,49 @@ input[type=search] {
   opacity : 0.3;*/
 }
 
-label[for="search"] {
+.search-form {
+  display: flex;
+  justify-content: center;
+
+}
+
+.search-button {
+  display: flex;
+  position: relative;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  justify-content: center;
+  left: 20px;
+  opacity: 0.3;
+  background-color: transparent;
+}
+
+.search-button:hover {
+  background-image: url(../img/icon-search.svg);
+  opacity: 1;
+
+}
+
+.search-button:active {
+  background-image: url(../img/icon-search-red1.png);
+}
+
+
+.search-form input[type=text] {
+
+}
+
+label[for="text"] {
+  margin-right: -17px;
+
+}
+
+/*label[for="search"] {
   position: relative;
 }
 
@@ -113,27 +156,16 @@ label[for="search"]:hover::before {
 
 label[for="search"]:focus::before {
   background-image: url(../img/icon-search-red1.png);
-
+*/
 }
 
-input[type=search]:focus {
-  position: relative;
+.search-form input[type=text]:hover {
+  background-color: #212a3a;
+}
+
+.search-form input[type=text]:focus {
   background-color: #ffffff;
   color: #000000;
-
-}
-
-
-input[type=search]:hover {
-  opacity: 1;
-}
-
-.search:active {
-  background-color:#ffffff;
-}
-
-.search:hover {
-  background-color: #212a3a;
 }
 
 .bookmarks {
@@ -370,17 +402,33 @@ input[type=search]:hover {
 
 }
 
+.user-name-box {
+  width: 290px;
+  display: flex;
+}
+
 .user-name {
   background-color: #ffffff;
   color: #000000;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
-  width: 290px;
+  width: 240px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 5px;
+}
+
+.logout {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #ffffff;
+  border: none;
+  width: 50px;
+  border-top: -10px;
+  height: 51px;
 }
 
 .user-name:hover {
@@ -737,19 +785,22 @@ input[type=search]:hover {
 }
 
 .about-us h2 {
+  font-family: "Myriad Pro","Arial",sans-serif;
   font-size: 30px;
   color: #111111;
   margin-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .about-us p {
   font-size: 13px;
-  font-family: "PT Sans","Arial",sans-serif;
+  font-family: "Myriad Pro","Arial",sans-serif;
   color: #222222;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .transpotr-company a {
+  font-family: "Myriad Pro","Arial",sans-serif;
   font-size: 18px;
   line-height: 40px;
   color: #000000;
@@ -788,6 +839,13 @@ input[type=search]:hover {
   text-transform: uppercase;
   width: auto;
   display: block;
+}
+
+.about-us-contacts {
+
+}
+
+.about-us-contacts p {
 
 }
 
@@ -1013,6 +1071,10 @@ input[type=radio] {
   background-image: url(../img/checkbox-on.svg);
 }
 
+.manufacturers-input-checkbox:checked + label::before {
+  display: none;
+}
+
 .current-option label {
   position: relative;
   display: block;
@@ -1053,9 +1115,11 @@ input[type=radio] {
   background: #ffffff;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-
   margin-left: 10px;
+  position: relative;
+
 }
+
 
 .button-show:active {
   border: 1px solid #638fb0;
@@ -1069,11 +1133,7 @@ input[type=radio] {
   text-align: center;
   vertical-align: middle;
   border: 1px solid #e5e5e5;
-
 }
-
-
-
 
 .product-name a {
   font-weight: 700;
@@ -1123,9 +1183,28 @@ input[type=radio] {
   margin: 0 auto;
   display: block;
   width: 65px;
-  margin-top: 45px;
+  margin-top: -30px;
   align-items: center;
 }
+
+.buy-button::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icon-cart.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.3;
+}
+
+.buy-button:hover::before,
+.buy-button:focus::before,
+.buy-button:active::before {
+  opacity: 1;
+ }
 
 .buy-button:hover {
   background-color: #5fbb2d;
@@ -1137,6 +1216,7 @@ input[type=radio] {
 }
 
 .in-bookmarks {
+  margin-left: -10px;
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -1148,6 +1228,11 @@ input[type=radio] {
   border: 3px solid #63a63e;
   padding: 7px 27px 7px 27px;
   color: #32425c;
+  width: 68px;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
 }
 
 .in-bookmarks:hover {
@@ -1159,6 +1244,13 @@ input[type=radio] {
   color: #c1c6ce;
 }
 
+.actions {
+  background-color: transparent;
+  width: 70px;
+  margin-left: 30px;
+  margin-top: 40px;
+
+}
 
 body {
   min-width: 940px;
@@ -1468,7 +1560,7 @@ main {
   top: 15px;
 }
 
-.user-name::after {
+.logout::after {
   content: "";
   position: absolute;
   background-image: url(../img/icon-logout.svg);
@@ -1482,7 +1574,7 @@ main {
   background-image: url(../img/icon-user-hover.png);
 }
 
-.user-name:hover::after {
+.logout:hover::after {
   background-image: url(../img/icon-logout-hover.png);
 }
 
@@ -1571,22 +1663,23 @@ main {
 .product .actions {
   top:  0;
   left: 0;
-  width:  218px;
-  height: 88px;
+  width:  160px;
+  height: 30px;
   padding:  40px 0;
-  background-color: rgba(255,255,255,0.9);
+  background-color: transparent;
   z-index: 300;
   position: absolute;
+  display: block;
 }
 
 .product-new .actions,
 .product .actions {
   display: none;
+
 }
 
 
-}
-.product-new:hover .actions,
-.product:hover .actions {
+.all-product article:hover .actions {
   display: block;
+  background-color: #ffffff;
 }

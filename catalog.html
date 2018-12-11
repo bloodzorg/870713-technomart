@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/outlin1e.css">
+    <link rel="stylesheet" href="css/outlin3e.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,12 +16,11 @@
             <h1 class="visually-hidden">Техномарт</h1>
             <a class="logo" href="index.html">Техномарт</a>
           </div>
-          <div class="search-box">
-            <form action="/echo" method="post">
-              <label class="search-lable visually-hidden" for="search"></label>
-              <input type="search" id="search" name="search" placeholder="Поиск:">
-            </form>
-          </div>
+          <button type="submit" class="search-button"></button>
+          <form  class="search-form" action="/echo" method="get">
+            <label class="search-lable" for="text"></label>
+            <input name="text" type="text" id="text" placeholder="Поиск:">
+          </form>
           <a class="bookmarks" href="#">Закладки</a>
           <a class="basket" href="#">Корзина</a>
           <a class="order-header" href="#">Оформить заказ</a>
@@ -37,7 +36,10 @@
             <p class="street">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-info" aria-label="Меню пользователя">
-            <a class="user-name" href="#">Равшан Джамшутович</a>
+            <div class="user-name-box">
+              <a class="user-name" href="#">Равшан Джамшутович</a>
+              <button class="logout"></button>
+            </div>
             <div class="user-info-interface">
               <a class="my-orders" href="#">Мои заказы</a>
               <span class="dot"></span>
@@ -118,7 +120,6 @@
       </section>
       <div class="all-product-container">
         <section class="all-product" aria-label="список товаров">
-          <div>
           <article class="product drill1">
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
@@ -130,7 +131,6 @@
             <label class="visually-hidden" for="buy">Купить за</label>
             <a class="button new-price" href="#" id="buy">15500 P.</a>
           </article>
-        </div>
           <article class="product drill2">
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
