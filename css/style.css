@@ -38,7 +38,6 @@ header {
   display: inline-block;
   padding: 12px 0 10px 0px;
   z-index: 400;
-
 }
 
 .logo:hover{
@@ -52,7 +51,6 @@ header {
   align-items: center;
   margin-bottom: 30px;
   padding: 0;
-
 }
 
 a.main-header-top:not(.logo) {
@@ -91,7 +89,6 @@ a.main-header-top:not(.logo) {
 .search-form {
   display: flex;
   justify-content: center;
-
 }
 
 .search-button {
@@ -113,7 +110,6 @@ a.main-header-top:not(.logo) {
 .search-button:hover {
   background-image: url(../img/icon-search.svg);
   opacity: 1;
-
 }
 
 .search-button:active {
@@ -127,7 +123,6 @@ a.main-header-top:not(.logo) {
 
 label[for="text"] {
   margin-right: -17px;
-
 }
 
 /*label[for="search"] {
@@ -257,7 +252,6 @@ label[for="search"]:focus::before {
   width: 150px;
   padding: 14px 0 12px 45px;
   color: #ffffff;
-
 }
 
 .order-header:active {
@@ -285,7 +279,6 @@ label[for="search"]:focus::before {
 
 .contacts {
 
-
 }
 
 .phone {
@@ -299,7 +292,6 @@ label[for="search"]:focus::before {
   margin-top: 25px;
   margin-bottom: -15px;
   position: relative;
-
 }
 
 .phone::before {
@@ -313,7 +305,6 @@ label[for="search"]:focus::before {
   width: 19px;
   height: 19px;
   opacity: 1;
-
 }
 
 .street {
@@ -362,7 +353,6 @@ label[for="search"]:focus::before {
   background-image: url(../img/icon-login.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-
 }
 
 .login:hover::before {
@@ -399,7 +389,6 @@ label[for="search"]:focus::before {
 
 .login-box {
   background-color: #f1f5f7;
-
 }
 
 .user-name-box {
@@ -589,7 +578,6 @@ label[for="search"]:focus::before {
 .modal-write-us label {
   font-size: 18px;
   font-family: "Cuprum","Arial",sans-serif;
-
 }
 
 .name-box {
@@ -708,7 +696,6 @@ label[for="search"]:focus::before {
   padding: 0;
   border: none;
   overflow: visible;
-
 }
 
 .modal-in-cart-close::before {
@@ -740,7 +727,6 @@ label[for="search"]:focus::before {
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
-
 }
 
 .modal-in-cart-box span {
@@ -805,8 +791,6 @@ label[for="search"]:focus::before {
   line-height: 40px;
   color: #000000;
   text-decoration: none;
-
-
 }
 
 .about-us-info
@@ -877,7 +861,6 @@ footer {
   color: #f1f5f7;
   text-align: left;
   margin-bottom: 32px;
-
 }
 
 .footer-middle a {
@@ -1102,7 +1085,6 @@ input[type=radio] {
   background-image: url(../img/radio-on.svg);
 }
 
-
 .button-show {
   padding: 10px 35px 10px;
   font-weight: 400;
@@ -1117,14 +1099,11 @@ input[type=radio] {
   border-radius: 3px;
   margin-left: 10px;
   position: relative;
-
 }
-
 
 .button-show:active {
   border: 1px solid #638fb0;
 }
-
 
 .product,
 .product-new {
@@ -1233,7 +1212,6 @@ input[type=radio] {
   margin: 0 auto;
   margin-bottom: 10px;
 }
-}
 
 .in-bookmarks:hover {
   border: 3px solid #32425c;
@@ -1249,13 +1227,10 @@ input[type=radio] {
   width: 70px;
   margin-left: 30px;
   margin-top: 40px;
-
 }
 
 body {
   min-width: 940px;
-
-
 }
 
 .main-header-top .container  {
@@ -1307,7 +1282,6 @@ body {
   align-items: center;
   justify-content: center;
   margin-right: 45px;
-
 }
 
 .menu {
@@ -1315,7 +1289,6 @@ body {
   align-items: center;
   justify-content:  flex-start;
   width: 940px;
-
 }
 
 .container-menu {
@@ -1334,14 +1307,11 @@ body {
 .about-us-info {
   width: 540px;
   margin-right: 100px;
-
 }
 
 .about-us-contacts {
   width: 300px;
   margin-top: px;
-
-
 }
 
 .about-us-container {
@@ -1374,7 +1344,6 @@ body {
 
 .footer-top-container {
   display: flex;
-
 }
 
 .footer-container-leftside {
@@ -1401,7 +1370,6 @@ body {
 .copyright-box {
   width: 230px;
   margin-right: 100px;
-
 }
 
 .social-box {
@@ -1410,7 +1378,6 @@ body {
   position: relative;
   justify-content: space-around;
   align-items: center;
-
 }
 
 .feedback-box {
@@ -1492,8 +1459,6 @@ main {
 .buy-cards {
   margin-top: 60px;
 }
-
-
 
 .social-button-vk::before {
   content: "";
