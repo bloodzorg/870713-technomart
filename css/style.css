@@ -37,8 +37,9 @@ header {
   text-align: center;
   width: 220px;
   display: inline-block;
-  padding: 10.5px 0 12px 0px;
+  padding: 12px 0 12px 0px;
   z-index: 400;
+  margin-right: -1.5px;
 }
 
 .logo:hover{
@@ -47,12 +48,11 @@ header {
 
 .main-header-top {
   background-color: #293449;
-  min-height: 42px;
+  min-height: 40px;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   padding: 0;
-  margin: 0;
 }
 
 a.main-header-top:not(.logo) {
@@ -73,7 +73,7 @@ a.main-header-top:not(.logo) {
 .search-form input[type=text] {
   position: relative;
   width: 100%;
-  padding: 16px 0 13px 49px;
+  padding: 16px 10px 14px 49px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 400;
@@ -105,6 +105,7 @@ a.main-header-top:not(.logo) {
   background-repeat: no-repeat;
   background-position: 0 0;
   justify-content: center;
+  top: 2px;
   left: 20px;
   opacity: 0.3;
   background-color: transparent;
@@ -176,13 +177,13 @@ label[for="search"]:focus::before {
   background-color: #293449;
   text-align: center;
   width: 105px;
-  padding: 16px 20px 13px 45px;
+  padding: 16px 20px 14px 45px;
 }
 
 .bookmarks::before {
   content: "";
   position: absolute;
-  top: 13px;
+  top: 16px;
   left: 29px;
   width: 16px;
   height: 18px;
@@ -215,14 +216,14 @@ label[for="search"]:focus::before {
   text-decoration: none;
   text-align: center;
   width: 105px;
-  padding: 16px 0 13px 45px;
+  padding: 16px 0 14px 45px;
   position: relative;
 }
 
 .basket::before {
   content: "";
   position: absolute;
-  top: 14px;
+  top: 17px;
   left: 29px;
   width: 15px;
   height: 15px;
@@ -254,7 +255,7 @@ label[for="search"]:focus::before {
   background-color: #63a63e;
   text-decoration: none;
   width: 150px;
-  padding: 16px 20px 13px 45px;
+  padding: 16px 20px 14px 45px;
   color: #ffffff;
 }
 
