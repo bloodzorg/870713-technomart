@@ -513,15 +513,17 @@ label[for="search"]:focus::before {
   position: fixed;
   width: 940px;
   height: 448px;
-  display: none;
   box-shadow: 0 30px 50px rgba(0,0,0,0.7);
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -470px;
+  border: none;
 }
 
-.show-map {
-  position: fixed;
-  top: 100px;
-  left: 150px;
-  display: none;/*flex*/
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .model-map-close {
