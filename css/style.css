@@ -509,34 +509,47 @@ label[for="search"]:focus::before {
 }
 
 .modal-map {
-  display: block;
+  display: none;
   position: fixed;
   width: 940px;
-  height: 448px;
+  height: 450px;
   box-shadow: 0 30px 50px rgba(0,0,0,0.7);
   top: 50%;
   left: 50%;
   margin-top: -280px;
   margin-left: -470px;
   border: none;
+  overflow: visible;
 }
 
 .modal-show {
-  display: block;
+  display: flex;
   animation: bounce 0.6s;
 }
 
-.model-map-close {
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.modal-map-close {
   padding: 0;
   border: none;
   overflow: visible;
 }
 
-.model-map-close::before {
+.modal-map-close::before {
   content: "";
   position: absolute;
-  top: 35px;
-  left: 900px;
+  top: 25px;
+  left: 910px;
   width: 21px;
   height: 21px;
   background-image: url(../img/form-2.png);
