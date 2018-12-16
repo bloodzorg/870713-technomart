@@ -4,6 +4,8 @@ var mapClose = mapPopup.querySelector(".modal-map-close");
 var Link = document.querySelector(".about-us-btn");
 var Popup = document.querySelector(".modal-write-us");
 var Close = Popup.querySelector(".modal-write-us-close");
+var form = Popup.querySelector("form");
+var password = Popup.querySelector("[name=text]");
 
 mapLink.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -45,25 +47,32 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-var cartLink = document.querySelector(".buy-button");
-var cartPopup = document.querySelector(".modal-in-cart");
-var cartClose = cartPopup.querySelector(".modal-in-cart-close");
-
-cartLink.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  cartPopup.classList.add("modal-show");
+form.addEventListener("submit", function (evt) {
+    if (!text.value) {
+      evt.preventDefault();
+      console.log("Нужно ввести Имя и почту");
+    }
 });
 
-cartClose.addEventListener("click", function (evt) {
+var cartlink = document.querySelector(".buy-button");
+var cartpopup = document.querySelector(".modal-in-cart");
+var cartclose = cartpopup.querySelector(".modal-in-cart-close");
+
+cartlink.addEventListener("click", function (evt) {
   evt.preventDefault();
-  cartPopup.classList.remove("modal-show");
+  cartpopup.classList.add("modal-show");
+});
+
+cartclose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartpopup.classList.remove("modal-show");
 });
 
 window.addEventListener("keydown", function (evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
-    if (cartPopup.classList.contains("modal-show")) {
-      cartPopup.classList.remove("modal-show");
+    if (cartpopup.classList.contains("modal-show")) {
+      cartpopup.classList.remove("modal-show");
     }
   }
 });
