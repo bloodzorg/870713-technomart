@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/outline.css">
+    <link rel="stylesheet" href="css/outli4ne.css">
   </head>
   <body>
     <header class="main-header">
@@ -166,13 +166,16 @@
           <div class="container-slider">
             <div class="service-menu">
               <div class="service-button-box">
-                <button type="button" class="service-button">Доставка</button>
-                <button type="button" class="service-button">Гарантия</button>
-                <button type="button" class="service-button">Кредит</button>
+                <input class="service-radio" type="radio" name="service-radio" id="delivery" value="delivery" checked>
+    						<label for="delivery">Доставка</label>
+                <input class="service-radio" type="radio" name="service-radio" id="garant" value="garant">
+    						<label for="garant">Гарантия</label>
+                <input class="service-radio" type="radio" name="service-radio" id="credit" value="credit">
+    						<label for="credit">Кредит</label>
               </div>
               <div class="img-text-service">
-                <span>Доставка</span>
-                <p>Мы с удовольствием доставим ваш товар прямо<br>
+                <span class="radio-title">Доставка</span>
+                <p class="radio-text">Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!<br>
                 Ведь мы неплохо заработаем, <br>
                 поднимая его на ваш на этаж!</p>

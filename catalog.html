@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/outline.css">
+    <link rel="stylesheet" href="css/outline1.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -76,6 +76,16 @@
       </section>
       <div class="catalog-columns">
       <section class="product-choice">
+        <h2>Фильтр:</h2>
+        <span class="cost">Цена:</span>
+        <div class="filter-controls">
+          <img src="img/filter.jpg" alt="Фильтр" width="220" height="80px">
+        </div>
+        <div class="price-text">
+          <input type="text" name="min" value="0">
+          <span class="defis">-</span>
+          <input type="text" name="max" value="30000">
+        </div>
         <div class="filters">
           <div class="manufacturers">
             <h3>Производители:</h3>
@@ -119,6 +129,16 @@
         </div>
       </section>
       <div class="all-product-container">
+        <div class="sorting">
+          <span>Сортировка:</span>
+          <ul class="sorting-list">
+            <li><a class="by-price" href="#">По цене</a></li>
+            <li><a class="by-type" href="#">По типу</a></li>
+            <li><a class="by-function" href="#">По функционалу</a></li>
+            <li><a class="up"href="#"></a></li>
+            <li><a class="down" href="#"></a></li>
+          </ul>
+        </div>
         <section class="all-product" aria-label="список товаров">
           <article class="product drill1">
             <div class="actions">
@@ -142,7 +162,7 @@
             <label class="visually-hidden">Купить за</label><br><br>
             <a class="button new-price" href="#">15500 P.</a>
           </article>
-          <article class="product-new drill1">
+          <article class="product-new drill1 rd">
             <div class="flag flag-new">новинка</div>
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
@@ -177,7 +197,7 @@
             <label class="visually-hidden">Купить за</label><br><br>
             <a class="button new-price" href="#">15500 P.</a>
           </article>
-          <article class="product drill1">
+          <article class="product drill1 rd">
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
               <a class="button in-bookmarks" href="#">В закладки</a>
@@ -211,7 +231,7 @@
             <label class="visually-hidden">Купить за</label><br><br>
             <a class="button new-price" href="#">15500 P.</a>
           </article>
-          <article class="product drill1">
+          <article class="product drill1 rd">
             <div class="actions">
               <a class="button buy-button" href="#">Купить</a><br>
               <a class="button in-bookmarks" href="#">В закладки</a>
@@ -222,6 +242,12 @@
             <label class="visually-hidden">Купить за</label>
             <a class="button new-price" href="#">12500 P.</a>
           </article>
+          <div class="page-number">
+            <a class="number-button current-page">1</a>
+            <a class="number-button" href="#">2</a>
+            <a class="number-button" href="#">3</a>
+            <a class="number-button" href="#">Следующая</a>
+          </div>
         </section>
         </div>
         <div class="modal-in-cart" method="post" enctype="multipart/form-data" action="#">
@@ -236,6 +262,13 @@
       		    <a class="button continue-buy" href="#">Продолжить Покупки</a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="about-drill">
+        <div class="container">
+          <h2>Пара слов о перфораторах</h2>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</p>
+          <p>Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
         </div>
       </div>
     </main>

@@ -922,6 +922,7 @@ footer {
   color: #f1f5f7;
   text-align: left;
   margin-bottom: 32px;
+  margin-top: 40px;
 }
 
 .footer-middle a {
@@ -952,6 +953,7 @@ footer {
   font-size: 16px;
   line-height: 28px;
   width: 100%;
+  margin-top: 40px;
 }
 
 .footer-navigation-top,
@@ -1008,6 +1010,11 @@ footer {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.page-navigation {
+  width: 940px;
+  margin: 0 auto;
 }
 
 .product-title {
@@ -1489,7 +1496,7 @@ main {
 
 .product-new,
 .product {
-  width: 210px;
+  width: 218px;
   margin-bottom: 20px;
   margin-right: 20px;
   text-align: center;
@@ -1507,7 +1514,7 @@ main {
   width: 220px;
 }
 
-.catalog-item:nth-child(3n) {
+.all-product .rd {
   margin-right: 0;
 }
 
@@ -1967,6 +1974,12 @@ main {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.popular-product-choice  article {
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .popular-product-choice article:hover .actions {
@@ -1975,7 +1988,7 @@ main {
 }
 
 .popular-product-choice article:last-child {
-  margin-right: -2px;
+  margin-right: 0;
 }
 
 .popular-manufacturers {
@@ -1985,6 +1998,7 @@ main {
   background-color: #f9f5f0;
   margin-bottom: 20px;
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .popular-manufacturers h2 {
@@ -2078,16 +2092,19 @@ main {
 .service {
   display: flex;
   background-color: #f4f8f9;
-  width: 940px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .service h2 {
   text-transform: uppercase;
   color: #000000;
   font-size: 30px;
-  font-family: "Cuprum","Arial",sans-serif;
+  font-family: "Cuprum",sans-serif;
   padding: 65px 0 5px;
+  font-weight: 400;
+  margin-bottom: 30px;
+
 }
 
 .service p {
@@ -2095,11 +2112,19 @@ main {
   font-size: 13px;
   font-family: "PT Sans","Arial",sans-serif;
   color: #000000;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+.service-info p {
+  margin-bottom: -10px;
 }
 
 .service-menu {
   display: flex;
   width: 940px;
+  margin: 0 auto;
 }
 
 .service-img-box {
@@ -2110,21 +2135,328 @@ main {
   width: 240px;
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
+  position: relative;
 }
 
 .img-text-service {
   width: 300px;
+  margin-top: 20px;
 }
 
-.service-button {
+
+.service-button-box label {
+  display: block;
   width: 218px;
-  padding: 13px 0 16px 22px;
-  font-weight: bold;
+  padding: 12px 0 15px 21px;
+  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
   font-family: "Cuprum","Arial",sans-serif;
   text-align: left;
-  cursor: pointer;
+  color: #ffffff;
   background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  outline: none;
+  cursor: pointer;
+}
+
+.service-radio:checked + label {
+  color: #32425c;
+  background: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.radio-title {
+  padding: 9px 0 31px 79px;
+  text-transform: uppercase;
+  color: #32425c;
+  font-size: 36px;
+  font-family: "Cuprum","Arial",sans-serif;
+}
+
+.radio-text {
+  width: 290px;
+  padding-left: 80px;
+  font-size: 13px;
+  font-family: "PT Sans","Arial",sans-serif;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.service-img-box {
+  margin-top: 30px;
+  margin-left: -70px;
+}
+
+.service-button-box::before {
+  content: "";
+  background-image: url(../img/label-shadow.png);
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 279px;
+  position: absolute;
+  left: 229px;
+  top: -40px;
+  z-index: 500;
+}
+
+.service .container {
+  margin: 0 auto;
+}
+
+.product-choice h2 {
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 13px;
+  text-align: 18px;
+  color: #000000;
+  padding: 10px 0 10px 20px;
+  background-color: #f7f3ec;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.cost {
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 17px;
+  text-align: 30px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.price-text {
+  display: flex;
+  width: 220px;
+  justify-content: space-between;
+}
+
+.filter-controls img {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.price-text input[type=text] {
+  width: 85px;
+  padding: 8px 2px 10px 8px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans","Arial",sans-serif;
+  text-align: center;
+  background-color: #f7f3ec;
   border: none;
+  border-radius: 3px;
+}
+
+.defis {
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.sorting {
+  display: flex;
+  background-color: #f7f3ec;
+  width: 700px;
+  justify-content: space-around;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  height: 38px;
+  border-radius: 3px;
+}
+
+.sorting-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 420px;
+  padding: 0;
+  margin-top: 8px;
+}
+
+.sorting-list .by-price,
+.sorting-list .by-type,
+.sorting-list .by-function {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans","Arial",sans-serif;
+  text-transform: uppercase;
+  color: #acaaa5;
+  border-bottom: 1px dashed #ee3643;
+}
+
+
+.sorting-list .by-price:hover,
+.sorting-list .by-type:hover,
+.sorting-list .by-function:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-list .by-price:active,
+.sorting-list .by-type:active,
+.sorting-list .by-function:active {
+  color: #ee3643;
+
+}
+
+
+.sorting-list li:first-child {
+  margin-left: -50px;
+}
+
+.sorting-list li:nth-child(5) {
+  margin-left: -40px;
+}
+
+.sorting-list li:last-child{
+  margin-right: -10px;
+}
+
+.sorting span {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "PT Sans","Arial",sans-serif;
+  text-transform: uppercase;
+  margin-right: 139px;
+  padding-left: 19px;
+  color: #000000;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+
+.sorting-list .up {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-bottom: none;
+}
+
+.sorting-list .up::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/icon-up-active.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  top: 5px;
+  left: 4px;
+}
+
+.sorting-list .down {
+  display: block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-bottom: none;
+}
+
+.sorting-list .down::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../img/icon-down-no-active.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  top: 5px;
+  left: 4px;
+}
+
+.sorting-list .up:hover::before {
+  background-image: url(../img/icon-up-hover.png);
+  border-bottom: none;
+}
+
+.sorting-list .down:hover::before {
+  background-image: url(../img/icon-down-hover.png);
+  border-bottom: none;
+}
+
+.sorting-list .down:active::before {
+  background-image: url(../img/icon-down-active.png);
+  border-bottom: none;
+}
+
+.sorting-list .up:active::before {
+  background-image: url(../img/icon-up-active.png);
+  border-bottom: none;
+}
+
+.number-button {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid #e5e5e5;;
+  border-radius: 3px;
+  padding: 10px 15px;
+  margin-top: 35px;
+  margin-bottom: 50px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.current-page {
+  background-color: #e04550;
+  color: #ffffff;
+}
+
+.number-button:hover {
+  border: 1px solid #bdc6ca;;
+}
+
+.number-button:active {
+  border: 1px solid #ee3643;;
+}
+
+.about-drill {
+  background-color: #f2f6f8;
+}
+
+.about-drill .container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0 69px;
+}
+
+.about-drill h2 {
+  margin-bottom: 28px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.about-drill p {
+  font-size: 13px;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
 }
