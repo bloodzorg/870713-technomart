@@ -156,7 +156,7 @@ label[for="text"] {
   content: "";
   position: absolute;
   top: 13px;
-  left: 35px;
+  left: 30px;
   width: 16px;
   height: 18px;
   background-image: url(../img/icon-bookmark.svg);
@@ -200,7 +200,7 @@ label[for="text"] {
   content: "";
   position: absolute;
   top: 13px;
-  left: 30px;
+  left: 25px;
   width: 15px;
   height: 15px;
   background-image: url(../img/icon-cart.svg);
@@ -2528,4 +2528,29 @@ main {
   color: #000000;
   padding: 0;
   margin: 0;
+}
+
+.credit-button {
+  width: 107px;
+  display: block;
+  margin: 27px 0 0 78px;
+  padding: 10px 44px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ee3642;
+  border-radius: 5px;
+  outline: none;
+}
+
+.guarantee-slider {
+  display: none;
+}
+
+.credit-slider {
+  display: none;
 }
